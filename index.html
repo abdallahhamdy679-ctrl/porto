@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Abdullah Hamdy — طالب علوم حاسب ومتدرب تحليل بيانات. مهارات، تدريب NTI، ومشاريع عملية." />
+  <title>Abdullah Hamdy | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">تخطي إلى المحتوى</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="logo" href="#top" aria-label="الصفحة الرئيسية">
+        <span class="logo-mark">&lt;/&gt;</span>
+        <span class="logo-text">ع.ح</span>
+      </a>
+      <nav class="nav" aria-label="التنقل الرئيسي">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="sr-only">فتح القائمة</span>
+        </button>
+        <ul class="nav-list" id="nav-menu">
+          <li><a href="#about">عني</a></li>
+          <li><a href="#education">تعليم</a></li>
+          <li><a href="#skills">مهارات</a></li>
+          <li><a href="#projects">مشاريع</a></li>
+          <li><a href="#contact">تواصل</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="تبديل الوضع الليلي">
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2" />
+          <path fill="none" stroke="currentColor" stroke-width="2"
+            d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+        </svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="none" stroke="currentColor" stroke-width="2"
+            d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">مرحباً، أنا</p>
+          <h1 class="hero-title">
+            عبدالله <span class="text-accent">حمدي</span>
+          </h1>
+          <p class="hero-role">Abdullah Hamdy · تحليل بيانات · علوم حاسب</p>
+          <p class="hero-lead">
+            طالب سنة رابعة في علوم الحاسب والمعلومات، ومتخرج مسار تحليل البيانات
+            من المعهد القومي للاتصالات (NTI). أعمل على تحويل البيانات إلى رؤى
+            واضحة عبر Python وPower BI وSQL.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">عرض الأعمال</a>
+            <a class="btn btn-ghost" href="#contact">تواصل معي</a>
+            <a class="btn btn-ghost btn-cv" href="/Abdullah_Hamdy_CV_Updated.pdf" download="Abdullah_Hamdy_CV.pdf"
+              type="application/pdf">
+              السيرة الذاتية (PDF)
+            </a>
+          </div>
+          <ul class="hero-stats" aria-label="ملخص سريع">
+            <li>
+              <strong>4</strong>
+              <span>سنة جامعية</span>
+            </li>
+            <li>
+              <strong>NTI</strong>
+              <span>مساران تدريبيان</span>
+            </li>
+            <li>
+              <strong>BI</strong>
+              <span>Python · SQL · Power BI</span>
+            </li>
+          </ul>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="code-card">
+            <div class="code-card-header">
+              <span></span><span></span><span></span>
+            </div>
+            <pre class="code-snippet"><code><span class="tok-kw">import</span> pandas <span class="tok-kw">as</span> pd
+
+profile = {
+  <span class="tok-key">"name"</span>: <span class="tok-str">"Abdullah Hamdy"</span>,
+  <span class="tok-key">"focus"</span>: [<span class="tok-str">"Data"</span>, <span class="tok-str">"Python"</span>],
+  <span class="tok-key">"open_to"</span>: <span class="tok-str">"internships"</span>
+}</code></pre>
+          </div>
+        </div>
+      </div>
+      <div class="hero-glow" aria-hidden="true"></div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container narrow">
+        <h2 class="section-title">عني</h2>
+        <p class="section-text">
+          مصري، مقيم في السادس من أكتوبر. أساس قوي في البرمجة وقواعد البيانات
+          والتفكير التحليلي، مع شغف باستخدام البيانات لحل مشكلات واقعية —
+          من التنظيف والاستكشاف إلى التصور واتخاذ القرار.
+        </p>
+        <p class="section-text">
+          اهتمامات: الذكاء الاصطناعي وتعلم الآلة، البيانات الضخمة والحوسبة
+          السحابية، ومجتمعات التقنية مفتوحة المصدر. العربية لغة أم، والإنجليزية
+          جيدة.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="education">
+      <div class="container">
+        <h2 class="section-title">التعليم والتدريب</h2>
+        <ul class="timeline">
+          <li class="timeline-item">
+            <p class="timeline-meta">2022 — 2027 · السادس من أكتوبر</p>
+            <h3>جامعة 6 أكتوبر</h3>
+            <p>بكالوريوس علوم الحاسب والمعلومات — السنة الرابعة</p>
+          </li>
+          <li class="timeline-item">
+            <p class="timeline-meta">2026 · NTI — القاهرة</p>
+            <h3>دبلوم مهني — مسار تحليل البيانات</h3>
+            <p>جمع وتنظيف واستكشاف البيانات، إحصاء، أساسيات تعلم الآلة، Power BI وExcel.</p>
+          </li>
+          <li class="timeline-item">
+            <p class="timeline-meta">2026 · NTI — القاهرة</p>
+            <h3>مسار تطوير الويب بـ PHP</h3>
+            <p>تدريب عملي على بناء تطبيقات ويب باستخدام PHP.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <h2 class="section-title">مهارات</h2>
+        <ul class="skills-grid">
+          <li class="skill-card">
+            <h3>تحليل البيانات</h3>
+            <p>Python (Pandas, NumPy), Statistical Analysis, Data Visualization</p>
+          </li>
+          <li class="skill-card">
+            <h3>BI &amp; بيانات</h3>
+            <p>Power BI, Tableau, SQL &amp; Databases, Microsoft Excel (Advanced)</p>
+          </li>
+          <li class="skill-card">
+            <h3>ويب</h3>
+            <p>PHP, Web Development (NTI track), HTML/CSS fundamentals</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">تدريب ومشاريع</h2>
+          <p class="section-sub">من برامج NTI — تطبيق عملي على بيانات حقيقية.</p>
+        </div>
+        <div class="projects-grid projects-grid--two">
+          <article class="project-card">
+            <div class="project-tag">NTI · 2026</div>
+            <h3>متدرب تحليل بيانات</h3>
+            <p>
+              تدريب مكثف: جمع وتنظيف واستكشاف البيانات بـ Python وExcel وPower BI.
+              مشاريع بتحليل إحصائي وأساسيات ML، لوحات معلومات وتقارير تحليلية
+              تُترجم النتائج إلى توصيات واضحة.
+            </p>
+          </article>
+          <article class="project-card">
+            <div class="project-tag">NTI · 2026</div>
+            <h3>متدرب تطوير ويب — PHP</h3>
+            <p>
+              مسار تطوير الويب باستخدام PHP ضمن برنامج NTI، لبناء أساس عملي
+              بجانب مسار تحليل البيانات.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container narrow contact-block">
+        <h2 class="section-title">تواصل</h2>
+        <p class="section-text">
+          متاح لتدريب تعاوني، فرص junior في تحليل البيانات، أو مشاريع تطبيقية.
+          السادس من أكتوبر، الجيزة.
+        </p>
+        <a class="contact-email" href="mailto:abdallahhamdy679@gmail.com">abdallahhamdy679@gmail.com</a>
+        <p class="contact-phone">
+          <a href="tel:+201116598371">+20 111 659 8371</a>
+        </p>
+        <p class="contact-cv">
+          <a href="/Abdullah_Hamdy_CV_Updated.pdf" download="Abdullah_Hamdy_CV.pdf">
+            تحميل السيرة الذاتية (PDF)
+          </a>
+        </p>
+        <ul class="social-links">
+          <li>
+            <a href="https://www.linkedin.com/in/abdallah-hamdy-4025ba32a/" target="_blank"
+              rel="noopener noreferrer">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> عبدالله حمدي. صُنع باهتمام.</p>
+      <a href="#top">العودة للأعلى ↑</a>
+    </div>
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>

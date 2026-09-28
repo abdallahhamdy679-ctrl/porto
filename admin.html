@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>لوحة التحكم | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/admin.css" />
+  </head>
+  <body>
+    <div id="login-screen" class="login-screen">
+      <form id="login-form" class="login-card">
+        <h1>لوحة التحكم</h1>
+        <p class="login-hint">أدخل كلمة المرور من ملف <code>admin.config.json</code></p>
+        <label>
+          كلمة المرور
+          <input type="password" id="login-password" autocomplete="current-password" required />
+        </label>
+        <button type="submit" class="btn btn-primary">دخول</button>
+        <p id="login-error" class="form-error" hidden></p>
+      </form>
+    </div>
+
+    <div id="admin-app" class="admin-app" hidden>
+      <header class="admin-header">
+        <div>
+          <h1>إدارة البورتفolio</h1>
+          <p class="admin-sub">أضف مشاريع، ارفع ملفات، واحفظ — التغييرات تظهر على الموقع فوراً.</p>
+        </div>
+        <div class="admin-header-actions">
+          <a class="btn btn-ghost" href="/" target="_blank" rel="noopener">معاينة الموقع</a>
+          <button type="button" class="btn btn-primary" id="save-all">حفظ الكل</button>
+          <button type="button" class="btn btn-ghost" id="logout">خروج</button>
+        </div>
+      </header>
+
+      <p id="save-status" class="save-status" role="status"></p>
+
+      <nav class="admin-tabs" aria-label="أقسام التحرير">
+        <button type="button" class="tab is-active" data-tab="projects">المشاريع</button>
+        <button type="button" class="tab" data-tab="uploads">رفع ملفات</button>
+        <button type="button" class="tab" data-tab="profile">الصفحة الرئيسية</button>
+        <button type="button" class="tab" data-tab="about">عني وتواصل</button>
+        <button type="button" class="tab" data-tab="skills">مهارات وتعليم</button>
+      </nav>
+
+      <section class="panel is-active" data-panel="projects">
+        <div class="panel-head">
+          <h2>المشاريع والأعمال</h2>
+          <button type="button" class="btn btn-primary" id="add-project">+ مشروع جديد</button>
+        </div>
+        <div id="projects-list" class="projects-admin-list"></div>
+      </section>
+
+      <section class="panel" data-panel="uploads">
+        <h2>رفع ملف (صورة، PDF، …)</h2>
+        <p class="panel-note">بعد الرفع انسخ الرابط واستخدمه في مشروع أو رابط السيرة الذاتية.</p>
+        <form id="upload-form" class="upload-form">
+          <input type="file" id="upload-file" name="file" required />
+          <button type="submit" class="btn btn-primary">رفع</button>
+        </form>
+        <p id="upload-result" class="upload-result"></p>
+        <ul id="upload-history" class="upload-history"></ul>
+      </section>
+
+      <section class="panel" data-panel="profile">
+        <h2>الصفحة الرئيسية</h2>
+        <div class="form-grid" id="form-profile"></div>
+        <h3>إحصائيات سريعة</h3>
+        <div id="form-stats"></div>
+        <button type="button" class="btn btn-ghost btn-sm" id="add-stat">+ إحصائية</button>
+      </section>
+
+      <section class="panel" data-panel="about">
+        <h2>عني</h2>
+        <div id="form-about"></div>
+        <h2 class="mt">تواصل</h2>
+        <div class="form-grid" id="form-contact"></div>
+        <h3>روابط اجتماعية</h3>
+        <div id="form-social"></div>
+        <button type="button" class="btn btn-ghost btn-sm" id="add-social">+ رابط</button>
+      </section>
+
+      <section class="panel" data-panel="skills">
+        <h2>مهارات</h2>
+        <div id="form-skills"></div>
+        <button type="button" class="btn btn-ghost btn-sm" id="add-skill">+ مهارة</button>
+        <h2 class="mt">التعليم والتدريب</h2>
+        <div id="form-education"></div>
+        <button type="button" class="btn btn-ghost btn-sm" id="add-education">+ عنصر</button>
+      </section>
+    </div>
+
+    <script type="module" src="/admin.js"></script>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+node_modules
+dist
+.DS_Store
+*.local
+admin.config.json
+public/uploads/*
+!public/uploads/.gitkeep

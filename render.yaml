@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: porto
+    runtime: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: ADMIN_PASSWORD
+        sync: false
